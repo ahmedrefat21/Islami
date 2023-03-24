@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Islami</string>
+    <string name="route_academy">Route Academy</string>
+    <string name="quran">quran</string>
+    <string name="hadeeth">hadeeth</string>
+    <string name="sebha">sebha</string>
+    <string name="radio">radio</string>
+    <string name="sura_name">Sura Name</string>
+    <string name="ayah_numbers">ayah numbers</string>
+    <string name="quran_image">Quran image</string>
+    <string name="Alahadeeth">Alahadeeth</string>
+    <string name="previous_arrow_image_button">previous arrow</string>
+    <string name="tasbeeh_number">Tasbeeh Number</string>
+    <string name="hadeeth_number"> Hadeeth Number</string>
+    <string name="quran_radio_station">Quran Radio Station</string>
+    <string name="TODO"> TODO</string>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/app_background"
+    tools:context=".fragments.RadioFragment">
+
+    <TextView
+        android:id="@+id/radio_fragment_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/elmessiri_semibold"
+        android:text="@string/app_name"
+        style="@style/white_black_text"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="200dp" />
+
+    <ImageView
+        android:id="@+id/radio_fragment_radio_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/quran_image"
+        android:src="@drawable/radio_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top_guideline"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/radio_fragment_quran_station_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/elmessiri_semibold"
+        android:text="@string/quran_radio_station"
+        style="@style/white_black_text"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radio_fragment_radio_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="3"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radio_fragment_quran_station_tv">
+
+        <ImageButton
+            android:id="@+id/radio_fragment_previous_image_button"
+            style="@style/AppTint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/TODO"
+            android:padding="20dp"
+            android:src="@drawable/radio_previous_button"
+            tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+
+        <ImageButton
+            android:id="@+id/radio_fragment_play_image_button"
+            style="@style/AppTint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/TODO"
+            android:padding="20dp"
+            android:src="@drawable/radio_play_button"
+            tools:ignore="ImageContrastCheck" />
+
+
+        <ImageButton
+            android:id="@+id/radio_fragment_next_image_button"
+            style="@style/AppTint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/TODO"
+            android:padding="20dp"
+            android:src="@drawable/radio_next_button"
+            tools:ignore="ImageContrastCheck" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

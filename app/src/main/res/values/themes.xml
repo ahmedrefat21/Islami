@@ -1,0 +1,74 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Islami" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/bronze</item>
+        <item name="colorPrimaryVariant">@color/dark_bronze</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/bronze</item>
+        <item name="colorSecondaryVariant">@color/dark_bronze</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="BottomNavigationView">
+        <item name="fontFamily">@font/jf_flat_regular</item>
+    </style>
+
+    <!-- Fragments Style -->
+    <style name="app_background">
+        <item name="android:background">@drawable/fragment_light_bg</item>
+    </style>
+
+    <!-- SplashScreen Style -->
+    <style name="splashScreenStyle">
+        <item name="android:background">@drawable/splash_screen_light_bg</item>
+    </style>
+
+    <!-- App Tint -->
+    <style name="AppTint">
+        <item name="android:tint">@color/bronze</item>
+    </style>
+
+    <style name="ViewBackground">
+        <item name="android:background">@color/bronze</item>
+    </style>
+
+    <style name="white_black_text">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="yellow_black_text">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="cardViewBackground">
+        <item name="cardBackgroundColor">@color/semi_transparent_white</item>
+    </style>
+
+    <style name="PreviousArrow">
+        <item name="android:src">@drawable/previous_arrow_light</item>
+    </style>
+
+    <style name="sebha_tv_style">
+        <item name="android:background">@drawable/sebha_count_shape_light</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="sebha_button_style">
+        <item name="android:background">@drawable/sebha_button_shape_light</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Bottom Navigation Style -->
+    <style name="BottomNavigationStyle">
+        <item name="android:background">@color/bronze</item>
+        <item name="itemIconTint">@color/navigation_color_change_light</item>
+        <item name="itemTextColor">@color/navigation_color_change_light</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/app_background"
+    tools:context=".fragments.SebhaFragment">
+
+    <TextView
+        android:id="@+id/sebha_fragment_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/elmessiri_semibold"
+        android:text="@string/app_name"
+        style="@style/white_black_text"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_guide_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="75dp" />
+
+    <ImageView
+        android:id="@+id/sebha_fragment_sebha_head"
+        style="@style/AppTint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:contentDescription="@string/TODO"
+        android:layoutDirection="rtl"
+        android:src="@drawable/sebha_head"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_guide_line"
+        tools:ignore="ImageContrastCheck" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_guide_line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="155dp" />
+
+    <ImageView
+        android:id="@+id/sebha_fragment_sebha_body"
+        style="@style/AppTint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/TODO"
+        android:src="@drawable/sebha_body"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_guide_line2"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/sebha_fragment_tasbeeh_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/elmessiri_semibold"
+        android:text="@string/tasbeeh_number"
+        style="@style/white_black_text"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sebha_fragment_sebha_body" />
+
+    <TextView
+        android:id="@+id/sebha_fragment_tasbeeh_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        style="@style/sebha_tv_style"
+        android:fontFamily="@font/rakkas_regular"
+        android:padding="25dp"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sebha_fragment_tasbeeh_number_tv" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sebha_fragment_count_button"
+        style="@style/sebha_button_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/rakkas_regular"
+        android:textColor="#0D47A1"
+        android:textSize="25sp"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sebha_fragment_tasbeeh_count_tv"
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck"
+        tools:text="@string/app_name" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

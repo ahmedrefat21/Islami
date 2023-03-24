@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/app_background"
+    tools:context=".fragments.QuranFragment">
+
+    <ImageView
+        android:id="@+id/hadeeth_fragment_hadeeth_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/quran_image"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:src="@drawable/hadeth_logo"
+        app:layout_constraintBottom_toTopOf="@id/bottom_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_guideline"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/hadeeth_fragment_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/elmessiri_semibold"
+        android:text="@string/app_name"
+        style="@style/white_black_text"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hadeeth_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/elmessiri_semibold"
+        android:text="@string/Alahadeeth"
+        style="@style/white_black_text"
+        android:textSize="25sp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_view_top" />
+
+    <View
+        android:id="@+id/horizontal_view_top"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        style="@style/ViewBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottom_guideline" />
+
+
+    <View
+        android:id="@+id/horizontal_view_bottom"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        style="@style/ViewBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hadeeth_number_tv" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="550dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="62dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hadeeth_fragment_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_view_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/hadeeth_layout"
+      />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

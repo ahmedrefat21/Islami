@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/app_background"
+    tools:context=".fragments.QuranFragment">
+
+    <ImageView
+        android:id="@+id/quran_fragment_quran_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/quran_image"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:src="@drawable/quran_image"
+        app:layout_constraintBottom_toTopOf="@id/bottom_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top_guideline"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/quran_fragment_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/elmessiri_semibold"
+        android:text="@string/app_name"
+        style="@style/white_black_text"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sura_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/elmessiri_semibold"
+        android:text="@string/sura_name"
+        style="@style/white_black_text"
+        android:textSize="25sp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="@id/vertical_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_view_top" />
+
+    <TextView
+        android:id="@+id/ayah_numbers_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/elmessiri_semibold"
+        android:text="@string/ayah_numbers"
+        android:textSize="25sp"
+        android:padding="8dp"
+        style="@style/white_black_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/vertical_view"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_view_top" />
+
+    <View
+        android:id="@+id/horizontal_view_top"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        style="@style/ViewBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottom_guideline" />
+
+
+    <View
+        android:id="@+id/horizontal_view_bottom"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        style="@style/ViewBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sura_name_tv" />
+
+    <View
+        android:id="@+id/vertical_view"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        style="@style/ViewBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_view_top" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="550dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="62dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/quran_fragment_sura_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_view_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/sura_layout"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

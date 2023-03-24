@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Khaki">#C9B396</color>
+    <color name="bronze">#B7935F</color>
+    <color name="dark_bronze">#8C7047</color>
+    <color name="metallic_yellow">#FACC19</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="off_white">#F8F8F8</color>
+    <color name="semi_transparent_white">#88FFFFFF</color>
+    <color name="semi_transparent_gunmetal">#141A2E</color>
+    <color name="dark_gunmetal">#161C31</color>
+    <color name="raisin_black">#242424</color>
+    <color name="black">#FF000000</color>
+</resources>

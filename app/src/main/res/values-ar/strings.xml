@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">إسلامي</string>
+    <string name="route_academy">Route Academy</string>
+    <string name="quran">القرآن</string>
+    <string name="hadeeth">الأحاديث</string>
+    <string name="sebha">السبحة</string>
+    <string name="radio">الراديو</string>
+    <string name="sura_name">اسم السورة</string>
+    <string name="ayah_numbers">عدد الآيات</string>
+    <string name="Alahadeeth">الأحاديث</string>
+    <string name="quran_image">صورة</string>
+    <string name="previous_arrow_image_button">زر العودة</string>
+    <string name="tasbeeh_number">عدد التسبيحات</string>
+    <string name="quran_radio_station">إذاعة القرآن الكريم</string>
+    <string name="hadeeth_number">حديث رقم</string>
+    <string name="TODO"> TODO</string>
+</resources>
