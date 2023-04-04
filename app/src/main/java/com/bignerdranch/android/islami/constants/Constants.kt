@@ -6,5 +6,6 @@ class Constants {
         const val SURA_NUMBER:String = "sura_number"
 
         const val HADEETH_NUMBER:String = "hadeeth_number"
+        const val ATHKAR_INDEX:String = "hadeeth_number"
     }
 }

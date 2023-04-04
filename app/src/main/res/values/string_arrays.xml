@@ -290,4 +290,36 @@
         <item>49</item>
         <item>50</item>
     </string-array>
+    <string-array name="athkar">
+        <item>"Remembrance of the morning and evening"</item>
+        <item>"When waking up"</item>
+        <item>"Remembrance before sleeping"</item>
+        <item>"Remembrance after salam from praying"</item>
+        <item>"When leaving the home"</item>
+        <item>"Upon entering the home"</item>
+        <item>"When going to the mosque"</item>
+        <item>"Upon entering the mosque"</item>
+        <item>"Upon leaving the mosque"</item>
+        <item>"Supplication for Al-Istikharah"</item>
+        <item>"Qunoot Al-Witr"</item>
+        <item>"Upon breaking fast"</item>
+        <item>"Supplication before eating"</item>
+        <item>"Upon completing the meal"</item>
+        <item>"Supplication when wearing a garment"</item>
+        <item>"Supplication when wearing a new garment"</item>
+        <item>"Supplication for anxiety and sorrow"</item>
+        <item>"Supplication for one in distress"</item>
+        <item>"Supplication for one whose affairs have become difficult"</item>
+        <item>"Visiting the graves"</item>
+        <item>"Prayer said during a wind storm"</item>
+        <item>"Supplication upon hearing thunder"</item>
+        <item>"Supplication for rain"</item>
+        <item>"Supplication said when it rains"</item>
+        <item>"After rainfall"</item>
+        <item>"Asking for clear sky"</item>
+        <item>"Upon sighting the crescent moon"</item>
+        <item>"Supplication at the conclusion of a sitting or gathering"</item>
+        <item>"Supplication said when mounting an animal or any means of transport"</item>
+        <item>"Supplication for travel"</item>
+    </string-array>
 </resources>

@@ -5,18 +5,26 @@
         android:id="@+id/menu_quran"
         android:title="@string/quran"
         android:icon="@drawable/moshaf_gold"
-        android:iconTint="@color/navigation_color_change_light"/>
+        android:iconTint="@color/navigation_color_change_light"
+        />
 
     <item
         android:id="@+id/menu_hadeeth"
         android:title="@string/hadeeth"
-        android:icon="@drawable/hadeeth"/>
+        android:icon="@drawable/hadeeth"
+        />
 
+    <item
+        android:id="@+id/menu_athkar"
+        android:title="@string/athkar"
+        android:icon="@drawable/athkar"
+        />
 
     <item
         android:id="@+id/menu_sebha"
         android:title="@string/sebha"
-        android:icon="@drawable/sebha"/>
+        android:icon="@drawable/sebha"
+        />
 
     <item
         android:id="@+id/menu_radio"

@@ -3,10 +3,7 @@ package com.bignerdranch.android.islami
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.bignerdranch.android.islami.fragments.HadeethFragment
-import com.bignerdranch.android.islami.fragments.QuranFragment
-import com.bignerdranch.android.islami.fragments.RadioFragment
-import com.bignerdranch.android.islami.fragments.SebhaFragment
+import com.bignerdranch.android.islami.fragments.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -37,6 +34,10 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.menu_sebha -> {
                     showFragment(SebhaFragment())
+                    true
+                }
+                R.id.menu_athkar -> {
+                    showFragment(AthkarFragment())
                     true
                 }
                 R.id.menu_radio -> {

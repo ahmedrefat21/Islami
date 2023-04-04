@@ -16,15 +16,25 @@
         />
 
     <item
+        android:id="@+id/menu_athkar"
+        android:enabled="true"
+        android:icon="@drawable/athkar"
+        android:title="@string/athkar"
+        />
+
+    <item
         android:id="@+id/menu_sebha"
         android:enabled="true"
         android:icon="@drawable/sebha"
-        android:title="@string/sebha" />
+        android:title="@string/sebha"
+        />
+
 
     <item
         android:id="@+id/menu_radio"
         android:enabled="true"
         android:icon="@drawable/radio"
-        android:title="@string/radio" />
+        android:title="@string/radio"
+        />
 
 </menu>
